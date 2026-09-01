@@ -15,6 +15,7 @@ set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} --expt-relaxed-constexpr --expt-extend
 add_library(persist_decode_lib STATIC
     src/persistent_layer.cu
     src/reference.cu
+    src/persistent_multi_layer.cu
 )
 
 target_include_directories(persist_decode_lib PUBLIC
